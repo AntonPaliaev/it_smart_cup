@@ -1,0 +1,63 @@
+@mixin font-light-24 {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+@mixin font-light-18 {
+  font-size: 18px;
+  font-weight: 100;
+}
+
+@mixin font-bold-h2 {
+  font-size: 48px;
+  line-height: 62px;
+  font-weight: 700;
+}
+
+@mixin font-bold-h3 {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 700;
+}
+
+@mixin font-bold-20 {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+
+@mixin ul-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin hover-active-opacity {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@mixin pt {
+  padding-top: 100px;
+  @media (max-width: 1300px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 700px) {
+    padding-top: 50px;
+  }
+}
+
+@mixin pb {
+  padding-bottom: 100px;
+  @media (max-width: 1300px) {
+    padding-bottom: 50px;
+  }
+  @media (max-width: 700px) {
+    padding-bottom: 30px;
+  }
+}
